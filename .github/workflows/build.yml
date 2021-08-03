@@ -24,7 +24,7 @@ jobs:
       run: echo "${{ secrets.HUB_PAT }}" | docker login https://docker.io -u mbq77 --password-stdin
 
     - name: Log into GHCR
-      run: echo "${{ secrets.CR_PAT }}" | docker login https://docker.io -u ${{ github.actor }} --password-stdin
+      run: echo "${{ secrets.CR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
 
     - name: Build the Docker image
       run: docker build --tag $IMAGE_NAME .

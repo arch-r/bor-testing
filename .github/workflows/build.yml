@@ -20,9 +20,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: Log into Docker Hub
-      run: echo "${{ secrets.HUB_PAT }}" | docker login https://docker.io -u mbq77 --password-stdin
-
     - name: Log into GHCR
       run: echo "${{ secrets.CR_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
 

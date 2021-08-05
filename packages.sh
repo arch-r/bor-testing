@@ -13,3 +13,6 @@ RD -e "install.packages('randomForest',repos='https://cloud.r-project.org')"
 
 R -e "install.packages('xgboost',repos='https://cloud.r-project.org')"
 RD -e "install.packages('xgboost',repos='https://cloud.r-project.org')"
+
+R -e "install.packages('mlbench',repos='https://cloud.r-project.org')"
+RD -e "install.packages('mlbench',repos='https://cloud.r-project.org')"
